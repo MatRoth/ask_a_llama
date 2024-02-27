@@ -18,7 +18,7 @@ softmax <- function(logits){
 # ALLBUS 2018 cross-section public use file
 # https://search.gesis.org/research_data/ZA5270
 alb_full <- read_sav("ZA5270_v2-0-0.sav") 
-questions <- read_excel("prompts_new.xlsx") # Covariate/prompt questions
+questions <- read_excel("prompts.xlsx") # Covariate/prompt questions
 
 alb <- read_sav("ZA5270_v2-0-0.sav") |>
   mutate(nation = "Deutschland",year = "2018")|>
